@@ -1,0 +1,6 @@
+docker run -d -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=ecomuser -e MYSQL_PASSWORD=ecompassword -e MYSQL_DATABASE=ecomdb -h database mysql
+docker ps
+docker exec -it containerid bash
+bash-4.4# mysql -u ecomuser -p
+Enter password:
+docker run -d -p 1000:80 --link adoring_shaw:db app #(adoring_shaw-->container name) tag
